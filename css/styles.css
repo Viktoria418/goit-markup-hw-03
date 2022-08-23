@@ -1,0 +1,228 @@
+:root {
+	--background-color-header: #ffffff;
+	--color-accent: #2196f3;
+	--color-nav-header: #212121;
+	--logo-header-color: #000000;
+	--color-contact: #757575;
+	--background-body-color: #f5f5f5;
+	--background-color-footer: #2f303a;
+	--color-text-darkbox: #ffffff;
+	--background-color-additional: #f5f4fa;
+	--color-text-standart: #757575;
+	--color-title: #212121;
+	--color-foot-adr: rgba(255, 255, 255, 0.6);
+
+	--color-роrtfolio-borders: #eeeeee;
+
+	--background-portfolio-btn: #eeeeee;
+	--color-portfolio-btn: #212121;
+	--color-text-products: #212121;
+
+	--background-color-portfolio: #ffffff;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.list {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+body {
+	background-color: var(--background-body-color);
+	color: var(--color-text-standart);
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	/* font-weight: 400; это размер 400 от браузера */
+	font-size: 14px;
+	line-height: 1.71;
+	/* or 171% */
+
+	letter-spacing: 0.03em;
+}
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+.team-item {
+	background-color: var(--background-color-header);
+}
+
+.page-header {
+	background-color: var(--background-color-header);
+}
+
+.navigation {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+.site-nav-link {
+	color: var(--color-nav-header);
+}
+
+.logo-header,
+.logo-footer {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	/* identical to box height */
+}
+
+.accent {
+	color: var(--color-accent);
+}
+
+.logo-header {
+	color: var(--logo-header-color);
+}
+.current-link { 
+    color:#2196f3;
+}
+.contacts-link {
+	color: var(--color-contact);
+    /* font-family: 'Roboto'; */
+/* font-style: normal; */
+font-weight: 500;
+/* font-size: 14px; */
+line-height: 1.14;
+}
+.page-footer,
+.hero {
+	background-color: var(--background-color-footer);
+	color: var(--color-text-darkbox);
+}
+.hero-btn {
+	cursor: pointer;
+	color: inherit;
+	background-color: var(--color-accent);
+	font-family: inherit;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	/* identical to box height, or 188% */
+
+	text-align: center;
+	letter-spacing: 0.06em;
+}
+.hero {
+	text-align: center;
+}
+.hero-title {
+	/* font-family: 'Roboto ,
+        sans-serif'; это есть */
+	/* font-style: normal еть; */
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	/* or 136% */
+
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.team {
+	background-color: var(--background-color-additional);
+}
+.title {
+	color: var(--color-title);
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+}
+.team .title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	/* identical to box height */
+
+	text-align: center;
+}
+.team p {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+.section-title {
+	color: var(--color-title);
+}
+.footer-contact {
+	color: var(--color-foot-adr);
+}
+.footer-contacts a {
+	font-style: normal;
+	font-weight: 400;
+}
+
+.portfolio-btn {
+	cursor: pointer;
+	background-color: var(--background-portfolio-btn);
+	color: var(--color-portfolio-btn);
+    font-family: inherit;
+    font-size: 16px ;
+    font-weight: 500;
+    line-height: calc(26 / 15);
+}
+
+.products-items {
+	background-color: var(--background-color-portfolio);
+}
+.page-products h3 {
+	/* font-family: 'Roboto'; */
+	/* font-style: normal; */
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	/* identical to box height, or 200% */
+
+	letter-spacing: 0.06em;
+	color: var(--color-text-products);
+}
+.page-products p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.88;
+	/* identical to box height, or 188% */
+
+	color: var(--color-text-standart);
+}
+
+.site-nav :hover,
+.site-nav :focus,
+.contacts :hover,
+.contacts :focus,
+.footer-contacts :hover,
+.footer-contacts :focus {
+	color: var(--color-accent);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+	background-color: var(--color-accent);
+	color: var(--color-text-darkbox);
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
