@@ -11,42 +11,50 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<header class="page-header">
-			<nav class="navigation">
-             <a href="./index.html" class="logo-header link"><span class="accent">Web</span>Studio</a>    
-				
-				<ul class="site-nav list">
-					<li class="site-nav-item"><a class="site-nav-link link" href="./index.html">Студія</a></li>
-					<li class="site-nav-item"><a class="site-nav-link current-link link" href="./portfolio.html">Портфоліо</a></li>
-          <li class="site-nav-item"><a class="site-nav-link link" href="">Контакти</a></li>
-				</ul>
-			</nav>
+			<div class="container page-header-container">
+				<nav class="navigation">
+					<a href="./index.html" class="logo-header link"><span class="accent">Web</span>Studio</a>
 
-			<ul class="contacts list">
-        <li class="contacts-item"><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-				<li class="contacts-item"><a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-			</ul>
+					<ul class="site-nav list">
+						<li class="site-nav-item"><a class="site-nav-link link " href="./index.html">Студія</a></li>
+						<li class="site-nav-item"><a class="site-nav-link link current-link" href="./portfolio.html">Портфоліо</a></li>
+						<li class="site-nav-item"><a class="site-nav-link link" href="">Контакти</a></li>
+					</ul>
+				</nav>
+
+				<ul class="contacts list">
+					<li class="contacts-item fon"
+						><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li
+					>
+					<li class="contacts-item"
+						><a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
+					>
+				</ul>
+			</div>
 		</header>
 		<main class="page-prtfolio">
-			<section class="portfolio">
+			<div class="container">
+			<section class="portfolio">				
+
 				<h1 class="visually-hidden"> Портфоліо </h1>
 				<ul class="products-nav list">
-					<li>
-						<button class="portfolio-btn" type="button">Усі</button>
+					<li class="product">
+						<button class="portfolio-btn btn" type="button">Усі</button>
 					</li>
-					<li>
+					<li class="product">
 						<button class="portfolio-btn" type="button">Веб-сайти</button>
 					</li>
-					<li><button class="portfolio-btn" type="button">Додатки</button> </li>
-					<li><button class="portfolio-btn" type="button">Дизайн</button></li>
-					<li><button class="portfolio-btn" type="button">Маркетинг</button></li>
+					<li class="product"><button class="portfolio-btn" type="button">Додатки</button> </li>
+					<li class="product"><button class="portfolio-btn" type="button">Дизайн</button></li>
+					<li class="product"><button class="portfolio-btn" type="button">Маркетинг</button></li>
 				</ul>
 				<ul class="page-products list">
-					<li>
+					<li class="portf-pic">
 						<img
 							class="products-img"
 							src="./images/project-img.jpg"
@@ -58,7 +66,7 @@
 							<p>Веб-сайт</p>
 						</div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img
 							class="products-img"
 							src="./images/project-img-1.jpg"
@@ -67,7 +75,7 @@
 						/>
 						<div class="products-items"> <h2>Постер New Orlean vs Golden Star</h2> <p>Дизайн</p> </div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img
 							class="products-img"
 							src="./images/project-img-2.jpg"
@@ -76,11 +84,11 @@
 						/>
 						<div class="products-items"> <h2>Ресторан Seafood</h2> <p>Додаток</p> </div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img class="products-img" src="./images/project-img-3.jpg" alt="великі чорні навушники" width="370" />
 						<div><h2>Проєкт Prime</h2> <p>Маркетинг</p></div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img
 							class="products-img"
 							src="./images/project-img-4.jpg"
@@ -92,7 +100,7 @@
 							<p>Додаток</p>
 						</div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img
 							class="products-img"
 							src="./images/project-img-5.jpg"
@@ -104,7 +112,7 @@
 							<p>Веб-сайт</p>
 						</div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img
 							class="products-img"
 							src="./images/project-img-6.jpg"
@@ -116,29 +124,32 @@
 							<p>Дизайн</p>
 						</div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img class="products-img" src="./images/project-img-7.jpg" alt="біла бірка з чорним надписом" width="370" />
 						<div class="products-items">
 							<h2>Проєкт LAB </h2>
 							<p>Маркетинг</p>
 						</div>
 					</li>
-					<li>
+					<li class="portf-pic">
 						<img
 							class="products-img"
 							src="./images/project-img-8.jpg"
 							alt="чоловічі руки на клавіатурі відкритого ноутбука, на моніторі картинка з надписом зростання бізнесу"
 							width="370"
 						/>
-						<div class="products-items">
+						<div class="products-items"> 
 							<h2>Growing Business</h2>
 							<p>Додаток</p></div
 						>
 					</li>
 				</ul>
+			
 			</section>
+		</div>
 		</main>
 		<footer class="page-footer">
+			<div class="container">
 			<a class="logo-footer link" href="./index.html"><span class="accent">Web</span>Studio</a>
 			<address>
 				<ul class="footer-contacts list">
@@ -151,6 +162,7 @@
             <a class="footer-contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
 				</ul>
 			</address>
+		</div>
 		</footer>
 	</body>
 </html>
